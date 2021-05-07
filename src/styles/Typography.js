@@ -8,7 +8,7 @@ const Typography = createGlobalStyle`
 	}
 	
 	.text-center {
-		text-align: center;p
+		text-align: center;
 	}
 	
 	h1, 
