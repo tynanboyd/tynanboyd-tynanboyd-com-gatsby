@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import '@fontsource/work-sans';
 
 const GlobalStyles = createGlobalStyle`
 	:root {
