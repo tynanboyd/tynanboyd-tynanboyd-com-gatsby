@@ -13,7 +13,7 @@ export default function HomePage() {
       <section className="text-center">
         <p>
           I’m a web developer and designer in Edmonton, Alberta, Canada. I make custom
-          WordPress themes and fast fast fast <a href="https://www.gatsbyjs.com/" target="_blank"> Gatsby</a> sites.
+          WordPress themes and fast fast fast <a rel="noopener" href="https://www.gatsbyjs.com/" target="_blank"> Gatsby</a> sites.
         </p>
         <p>
           I work at <a href="https://pixeldesigns.ca">Pixel Designs</a>, where
