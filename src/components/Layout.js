@@ -14,15 +14,15 @@ const ContentStyles = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
-  @media(min-width: 1300px){
+
+  @media (min-width: 1300px) {
     max-width: 1170px;
   }
 `;
 
 export default function Layout({ children }) {
   return (
-    <>      
+    <>
       <GlobalStyles />
       <Typography />
       <Nav />

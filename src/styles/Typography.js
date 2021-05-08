@@ -4,7 +4,7 @@ const Typography = createGlobalStyle`
 	html {
 		font-family: 'Work Sans', 'system-ui', 'Helvetica', sans-serif;
 		color: var(--black);
-		line-height: 1.3;
+		line-height: 1.3;				
 	}
 	
 	.text-center {
@@ -52,6 +52,11 @@ const Typography = createGlobalStyle`
 		&:hover {
 			color: var(--orange);
 		}
+	}
+	
+	.large-text {
+		font-size: 3rem;
+		line-height: 3.6rem;
 	}
 `;
 

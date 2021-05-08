@@ -7,6 +7,7 @@ const GlobalStyles = createGlobalStyle`
 		--white: #FAF7F7;
 		--orange: #F6511D;
 		--blue: #00A6ED;
+		--highlight-background: linear-gradient(145deg, #72f, #c1b);
 	}
 	
 	html {
