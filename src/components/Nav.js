@@ -49,7 +49,7 @@ const NavStyles = styled.nav`
   display: flex;
   justify-content: space-between;
   max-width: 1170px;
-  margin: 1rem auto;
+  margin: 1rem auto 2rem;
   padding: 0 25px;
   overflow: visible;
 
@@ -68,7 +68,8 @@ const NavStyles = styled.nav`
 
     &[aria-current='page'],
     &:hover {
-      color: var(--orange);
+      text-decoration: underline;
+      text-decoration-style: wavy;
     }
   }
 `;
@@ -77,7 +78,7 @@ export default function Nav() {
   return (
     <NavStyles>
       <LogoStyles className="logo-wrapper">
-        <Link to="/">
+        <Link to="/" aria-label="Home page">
           <Logo />
         </Link>
       </LogoStyles>

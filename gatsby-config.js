@@ -8,6 +8,7 @@ module.exports = {
     description: 'A friendly web developer fellow in Edmonton, Alberta, Canada',
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     'gatsby-plugin-styled-components',
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

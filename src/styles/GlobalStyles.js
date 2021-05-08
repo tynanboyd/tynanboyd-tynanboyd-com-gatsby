@@ -46,18 +46,6 @@ const GlobalStyles = createGlobalStyle`
 		color: var(--black);
 	}
 	
-	h1 {
-		font-weight: 900;
-		font-size: 5rem;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		margin-bottom: 1rem;
-		padding-bottom: 1rem;
-		line-height: 0.8;
-		margin-top: 0;
-		border-bottom: 1px dashed var(--black);
-	}
-	
 	section {
 		margin-bottom: 1rem;
 	}

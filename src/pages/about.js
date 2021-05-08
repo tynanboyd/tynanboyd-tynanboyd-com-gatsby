@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
+import SEO from "../components/seo";
 
 const Columns = styled.section`
   display: flex;
@@ -35,9 +36,9 @@ const Columns = styled.section`
 `;
 
 export default function AboutPage() {
-  return (
-    <>
+  return (    
       <>
+      <SEO title="About"/>
         <h1 className="text-center">About</h1>
         <Columns>
           <div className="column">
@@ -60,7 +61,6 @@ export default function AboutPage() {
             </ul>
           </div>
         </Columns>
-      </>
-    </>
+      </>    
   );
 }
