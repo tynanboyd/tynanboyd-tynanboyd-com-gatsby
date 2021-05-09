@@ -6,6 +6,13 @@ import styled from 'styled-components';
 const FancyTitle = styled.h1`
   background-clip: text;
   background: var(--highlight-background);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  color: inherit;
+  -webkit-text-fill-color: transparent;
+  text-transform: none;
 `;
 
 export default function HomePage() {
@@ -14,7 +21,7 @@ export default function HomePage() {
       <SEO title="Web developer" />
       <section className="text-center">
         <span>Hello, this is the website of</span>
-        <FancyTitle>Tynan Boyd</FancyTitle>
+        <h1>Tynan Boyd</h1>
       </section>
       <section className="text-center large-text">
         <p>
