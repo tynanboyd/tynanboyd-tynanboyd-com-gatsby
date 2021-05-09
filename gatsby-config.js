@@ -13,8 +13,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
-    `gatsby-plugin-transition-link`,
-    `gatsby-plugin-dark-mode`,
     {
       resolve: `gatsby-source-sanity`,
       options: {
