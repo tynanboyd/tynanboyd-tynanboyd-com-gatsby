@@ -55,8 +55,13 @@ const Typography = createGlobalStyle`
 	}
 	
 	.large-text {
-		font-size: 3rem;
-		line-height: 3.6rem;
+		font-size: 1.5rem;
+		
+		@media(min-width: 601px) {
+			font-size: 3rem;
+			line-height: 3.6rem;
+		}
+		
 	}
 `;
 
