@@ -3,18 +3,6 @@ import { Link } from 'gatsby';
 import SEO from '../components/seo';
 import styled from 'styled-components';
 
-const FancyTitle = styled.h1`
-  background-clip: text;
-  background: var(--highlight-background);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  color: inherit;
-  -webkit-text-fill-color: transparent;
-  text-transform: none;
-`;
-
 export default function HomePage() {
   return (
     <>
@@ -34,7 +22,7 @@ export default function HomePage() {
           sites.
         </p>
         <p>
-          I work at <a href="https://pixeldesigns.ca">Pixel Designs</a>, where
+          I work at <a rel="noopener" target="_blank" href="https://pixeldesigns.ca">Pixel Designs</a>, where
           top-notch sites are made. If you've got a serious development project,
           that's where you want to go. For more casual work,{' '}
           <Link to="/contact">I might be able to help.</Link>

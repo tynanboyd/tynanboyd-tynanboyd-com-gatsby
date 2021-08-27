@@ -33,6 +33,39 @@ async function turnBooksIntoPages(graphql, actions, reporter) {
   });
 }
 
+async function turnMarkdownIntoPages(graphql, actions, reporter) {
+  const postTemplate = path.resolve('./src/templates/blogTemplate.js');
+  const { createPage } = actions;
+  const result = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
+    }
+    `);
+    if (result.errors) throw result.errors;
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      createPage({
+        path: node.frontmatter.slug,
+        component: postTemplate,
+        context: {
+          // additional data can be passed via context
+          slug: node.frontmatter.slug,
+        },
+      })
+      })
+    }
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
   await turnBooksIntoPages(graphql, actions, reporter);
+  await turnMarkdownIntoPages(graphql, actions, reporter);
 };
