@@ -4,6 +4,7 @@ import SEO from '../components/seo';
 import styled from 'styled-components';
 
 export default function HomePage() {
+  const currentDate = new Date();
   return (
     <>
       <SEO title="Web developer" />
@@ -22,10 +23,23 @@ export default function HomePage() {
           sites.
         </p>
         <p>
-          I work at <a rel="noopener" target="_blank" href="https://pixeldesigns.ca">Pixel Designs</a>, where
-          top-notch sites are made. If you've got a serious development project,
-          that's where you want to go. For more casual work,{' '}
-          <Link to="/contact">I might be able to help.</Link>
+          I work at{' '}
+          <a rel="noopener" target="_blank" href="https://pixeldesigns.ca">
+            Pixel Designs
+          </a>
+          , where top-notch sites are made. If you've got a serious development
+          project, that's where you want to go. For more casual work,{' '}
+          <Link to="/contact">I might be able to help.*</Link>
+        </p>
+        <p>
+          <small>
+            <sup>
+              *Last updated: {currentDate.toLocaleString() + ''}
+              <br />
+            </sup>
+            My freelance schedule is booked through 2021. If we can start your
+            project in 2022, let's plant the seed now.
+          </small>
         </p>
       </section>
     </>

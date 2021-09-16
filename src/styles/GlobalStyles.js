@@ -50,6 +50,10 @@ const GlobalStyles = createGlobalStyle`
 	section {
 		margin-bottom: 1rem;
 	}
+	
+	small {
+		font-size: 16px;
+	}
 `;
 
 export default GlobalStyles;
