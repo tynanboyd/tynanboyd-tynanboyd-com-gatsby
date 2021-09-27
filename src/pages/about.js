@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
-import SEO from "../components/seo";
+import SEO from '../components/seo';
 
 const Columns = styled.section`
   display: flex;
@@ -33,34 +33,38 @@ const Columns = styled.section`
       justify-content: flex-start;
     }
   }
+
+  ul {
+    padding: 0;
+  }
 `;
 
 export default function AboutPage() {
-  return (    
-      <>
-      <SEO title="About"/>
-        <h1 className="text-center">About</h1>
-        <Columns>
-          <div className="column">
-            <h2>What I look like</h2>
-            <p>So you can say hello at the grocery store</p>
-            <StaticImage
-              className="headshot"
-              src="../assets/images/tynan-boyd.jpg"
-              alt="Tynan Boyd, wearing glasses and an orange cardigan with a collared shirt"
-              placeholder="blurred"
-              width={600}
-            />
-          </div>
-          <div className="column">
-            <h2>More about me</h2>
-            <ul>
-              <li>I am pretty good at chess</li>
-              <li>I play piano a lot these days</li>
-              <li>I like to run and hike and go bouldering</li>
-            </ul>
-          </div>
-        </Columns>
-      </>    
+  return (
+    <>
+      <SEO title="About" />
+      <h1 className="text-center">About</h1>
+      <Columns>
+        <div className="column">
+          <h2>What I look like</h2>
+          <p>So you can say hello at the grocery store</p>
+          <StaticImage
+            className="headshot"
+            src="../assets/images/tynan-boyd.jpg"
+            alt="Tynan Boyd, wearing glasses and an orange cardigan with a collared shirt"
+            placeholder="blurred"
+            width={600}
+          />
+        </div>
+        <div className="column">
+          <h2>More about me</h2>
+          <ul>
+            <li>I am pretty good at chess</li>
+            <li>I play piano a lot these days</li>
+            <li>I like to run and hike and go bouldering</li>
+          </ul>
+        </div>
+      </Columns>
+    </>
   );
 }
