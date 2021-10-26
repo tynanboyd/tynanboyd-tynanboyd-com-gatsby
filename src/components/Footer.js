@@ -5,11 +5,6 @@ const FooterStyles = styled.footer`
   display: flex;
   justify-content: center;
 
-  div {
-    max-width: 1170px;
-    padding: 0 25px;
-  }
-  
   .footer-heading {
     display: block;
     font-weight: bold;
@@ -19,9 +14,8 @@ const FooterStyles = styled.footer`
 export default function Footer() {
   return (
     <>
-      <FooterStyles className="text-center">
+      <FooterStyles className="">
         <div>
-          <span className="footer-heading">Disclaimer</span>
           <small>
             I use this site as a web development playground. It's where I try
             out new ideas, and get to follow through with putting them on the

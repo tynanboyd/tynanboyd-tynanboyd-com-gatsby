@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Logo from '../assets/images/tynan-logo-black.svg';
 
 const LogoStyles = styled.div`
-  width: 60px;
+  width: 30px;
   transform: translateY(10px);
   overflow: visible;
 
@@ -48,7 +48,6 @@ const LogoStyles = styled.div`
 const NavStyles = styled.nav`
   display: flex;
   justify-content: space-between;
-  max-width: 1170px;
   margin: 1rem auto 2rem;
   padding: 0 25px;
   overflow: visible;
@@ -63,12 +62,13 @@ const NavStyles = styled.nav`
   }
 
   a {
-    color: var(--black);
+    color: var(--grey);
     text-decoration: none;
 
     &[aria-current='page'],
     &:hover {
       text-decoration: underline;
+      text-decoration-color: var(--orange);
       text-decoration-style: wavy;
     }
   }

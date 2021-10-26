@@ -8,15 +8,24 @@ const GlobalStyles = createGlobalStyle`
 		--orange: #F6511D;
 		--blue: #00A6ED;
 		--highlight-background: linear-gradient(145deg, #72f, #c1b);
+		--grey: #848484;
 	}
 	
+	.color-primary {
+		color: var(--orange);
+	}
+	
+	
 	html {
+		font-size: 15px;
+		font-weight: 400;
 	}
 	
 	body {
-		background-color: var(--yellow);
+		background-color: white;
 		min-height: 100vh;
 		position: relative;
+		color: var(--grey);
 	}
 	
 	.gatsby-image-wrapper img[src*=base44\\,] {
@@ -30,7 +39,7 @@ const GlobalStyles = createGlobalStyle`
 	
 	html {
 		scrollbar-width: thin;
-		scrollbar-color: var(--blue) var(--white);
+		scrollbar-color: var(--yellow) var(--white);
 	}
 	
 	body::-webkit-scrollbar-thumb {
@@ -44,7 +53,7 @@ const GlobalStyles = createGlobalStyle`
 	}
 	
 	a {
-		color: var(--black);
+		color: var(--orange);
 	}
 	
 	section {

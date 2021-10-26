@@ -21,6 +21,7 @@
     }
   },
   "dependencies": {
+    "@fontsource/inter": "^4.5.0",
     "@fontsource/work-sans": "^4.5.1",
     "babel-plugin-styled-components": "^1.13.3",
     "gatsby": "^4.0.0",

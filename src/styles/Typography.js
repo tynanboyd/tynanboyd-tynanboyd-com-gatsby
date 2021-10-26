@@ -2,9 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 
 const Typography = createGlobalStyle`
 	html {
-		font-family: 'Work Sans', 'system-ui', 'Helvetica', sans-serif;
+		font-family: 'Inter', 'Work Sans', 'system-ui', 'Helvetica', sans-serif;
 		color: var(--black);
-		line-height: 1.3;				
+		line-height: 1.6666;				
 	}
 	
 	.text-center {
@@ -21,7 +21,7 @@ const Typography = createGlobalStyle`
 	}
 	
 	h1 {
-		font-weight: 900;
+		font-weight: 600;
 		font-size: 3rem;
 		text-transform: uppercase;
 		letter-spacing: 1px;
@@ -62,6 +62,11 @@ const Typography = createGlobalStyle`
 			line-height: 3.6rem;
 		}
 		
+	}
+	
+	.hello {
+		font-size: 1.3333rem;
+		font-weight: 800;
 	}
 `;
 

@@ -3,16 +3,20 @@ import { Link } from 'gatsby';
 import SEO from '../components/seo';
 import styled from 'styled-components';
 
+const StyledIntroduction = styled.section`
+  max-width: 620px;
+  line-height: 1.6666;
+`;
+
 export default function HomePage() {
   const currentDate = new Date();
   return (
     <>
       <SEO title="Web developer" />
-      <section className="text-center">
-        <span>Hello, this is the website of</span>
-        <h1>Tynan Boyd</h1>
+      <section className="">
+        <strong class="color-primary hello">Hello</strong>
       </section>
-      <section className="text-center large-text">
+      <StyledIntroduction>
         <p>
           I’m a web developer and designer in Edmonton, Alberta, Canada. I make
           custom WordPress themes and fast fast fast{' '}
@@ -37,15 +41,11 @@ export default function HomePage() {
         </p>
         <p>
           <small>
-            <sup>
-              *Last updated: October 18, 2021.
-              <br />
-            </sup>
             My freelance schedule is booked through 2021. If we can start your
             project in 2022, let's plant the seed now.
           </small>
         </p>
-      </section>
+      </StyledIntroduction>
     </>
   );
 }
