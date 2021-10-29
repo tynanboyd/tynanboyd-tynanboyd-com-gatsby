@@ -63,6 +63,7 @@ export default function AboutPage() {
             <li>I like chess</li>
             <li>I like piano</li>
             <li>I like to run</li>
+            <li>I like to build websites</li>
           </ul>
         </div>
       </Columns>

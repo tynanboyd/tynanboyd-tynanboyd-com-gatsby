@@ -14,9 +14,7 @@ export default function HomePage() {
   return (
     <>
       <SEO title="Web developer" />
-      <section className="">
-        <PageTitle title="Hello" />
-      </section>
+      <PageTitle title="Hello" />
       <StyledIntroduction>
         <p>
           I’m a web developer and designer in Edmonton, Alberta, Canada. I make
