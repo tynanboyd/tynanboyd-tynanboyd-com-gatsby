@@ -1,7 +1,8 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import SEO from '../components/seo';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "gatsby";
+import SEO from "../components/seo";
+import styled from "styled-components";
+import PageTitle from "../components/PageTitle";
 
 const StyledIntroduction = styled.section`
   max-width: 620px;
@@ -14,16 +15,16 @@ export default function HomePage() {
     <>
       <SEO title="Web developer" />
       <section className="">
-        <strong class="color-primary hello">Hello</strong>
+        <PageTitle title="Hello" />
       </section>
       <StyledIntroduction>
         <p>
           I’m a web developer and designer in Edmonton, Alberta, Canada. I make
-          custom WordPress themes and fast fast fast{' '}
+          custom WordPress themes and fast fast fast{" "}
           <a rel="noopener" href="https://www.gatsbyjs.com/" target="_blank">
-            {' '}
+            {" "}
             Gatsby
-          </a>{' '}
+          </a>{" "}
           sites.
         </p>
         <p>
@@ -31,12 +32,12 @@ export default function HomePage() {
           folks.
         </p>
         <p>
-          I work at{' '}
+          I work at{" "}
           <a rel="noopener" target="_blank" href="https://pixeldesigns.ca">
             Pixel Designs
           </a>
           , where top-notch sites are made. If you've got a serious development
-          project, that's where you want to go. For more casual work,{' '}
+          project, that's where you want to go. For more casual work,{" "}
           <Link to="/contact">I might be able to help.*</Link>
         </p>
         <p>

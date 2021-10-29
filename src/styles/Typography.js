@@ -1,10 +1,11 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 const Typography = createGlobalStyle`
 	html {
 		font-family: 'Inter', 'Work Sans', 'system-ui', 'Helvetica', sans-serif;
 		color: var(--black);
-		line-height: 1.6666;				
+		line-height: 1.6666;
+		font-weight: 300;
 	}
 	
 	.text-center {
@@ -21,19 +22,17 @@ const Typography = createGlobalStyle`
 	}
 	
 	h1 {
-		font-weight: 600;
-		font-size: 3rem;
-		text-transform: uppercase;
+		font-weight: 800;		
 		letter-spacing: 1px;
 		margin-bottom: 1rem;
 		padding-bottom: 1rem;
 		line-height: 0.8;
-		margin-top: 0;
-		border-bottom: 1px dashed var(--black);
-		
-		@media(min-width: 601px) {
-			font-size: 5rem;
-		}
+		margin-top: 0;		
+		color: var(--orange);				
+	}
+	
+	h2 {
+		font-weight: 400;
 	}
 	
 	
@@ -64,9 +63,12 @@ const Typography = createGlobalStyle`
 		
 	}
 	
-	.hello {
-		font-size: 1.3333rem;
-		font-weight: 800;
+	ul > li {
+		margin-bottom: 1rem;
+	}
+	
+	p {
+		margin-top: 0;
 	}
 `;
 

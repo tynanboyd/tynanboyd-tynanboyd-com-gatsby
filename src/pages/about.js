@@ -1,8 +1,9 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
-import styled from 'styled-components';
-import SEO from '../components/seo';
+import React from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+import styled from "styled-components";
+import SEO from "../components/seo";
+import PageTitle from "../components/PageTitle";
 
 const Columns = styled.section`
   display: flex;
@@ -43,10 +44,10 @@ export default function AboutPage() {
   return (
     <>
       <SEO title="About" />
-      <h1 className="text-center">About</h1>
+      <PageTitle title="About" />
       <Columns>
         <div className="column">
-          <h2>What I look like</h2>
+          <h2>What I Look Like</h2>
           <p>So you can say hello at the grocery store</p>
           <StaticImage
             className="headshot"
@@ -57,11 +58,11 @@ export default function AboutPage() {
           />
         </div>
         <div className="column">
-          <h2>More about me</h2>
-          <ul>
-            <li>I am pretty good at chess</li>
-            <li>I play piano a lot these days</li>
-            <li>I like to run and hike and go bouldering</li>
+          <h2>More About Me</h2>
+          <ul className="list">
+            <li>I like chess</li>
+            <li>I like piano</li>
+            <li>I like to run</li>
           </ul>
         </div>
       </Columns>
