@@ -23,6 +23,10 @@ export default function HomePage() {
           sites.
         </p>
         <p>
+          My favourite projects are co-piloted with artists or community-minded
+          folks.
+        </p>
+        <p>
           I work at{' '}
           <a rel="noopener" target="_blank" href="https://pixeldesigns.ca">
             Pixel Designs
@@ -34,7 +38,7 @@ export default function HomePage() {
         <p>
           <small>
             <sup>
-              *Last updated: {currentDate.toLocaleString() + ''}
+              *Last updated: October 18, 2021.
               <br />
             </sup>
             My freelance schedule is booked through 2021. If we can start your
