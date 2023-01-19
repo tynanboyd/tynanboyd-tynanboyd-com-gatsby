@@ -28,8 +28,8 @@ export default function HomePage() {
         </p>
         <p>
           I work at{' '}
-          <a rel="noopener" target="_blank" href="https://pixeldesigns.ca">
-            Pixel Designs
+          <a rel="noopener" target="_blank" href="https://wearepixel.ca">
+            Pixel
           </a>
           , where top-notch sites are made. If you've got a serious development
           project, that's where you want to go. For more casual work,{' '}
@@ -38,11 +38,11 @@ export default function HomePage() {
         <p>
           <small>
             <sup>
-              *Last updated: October 18, 2021.
+              *Last updated: January 19, 2023.
               <br />
             </sup>
-            My freelance schedule is booked through 2021. If we can start your
-            project in 2022, let's plant the seed now.
+            My freelance schedule is booked until May 2023. If we can start your
+            project later in the year, let's plant the seed now.
           </small>
         </p>
       </section>

@@ -13,6 +13,10 @@ const GlobalStyles = createGlobalStyle`
 	html {
 	}
 	
+	h1 {
+		font-size: 3rem;
+	}
+	
 	body {
 		background-color: var(--yellow);
 		min-height: 100vh;
@@ -30,7 +34,7 @@ const GlobalStyles = createGlobalStyle`
 	
 	html {
 		scrollbar-width: thin;
-		scrollbar-color: var(--blue) var(--white);
+		scrollbar-color: var(--yellow) var(--white);
 	}
 	
 	body::-webkit-scrollbar-thumb {
