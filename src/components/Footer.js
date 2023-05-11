@@ -14,6 +14,23 @@ const FooterStyles = styled.footer`
     display: block;
     font-weight: bold;
   }
+  
+  .strava-badge- {
+    display: inline-block;
+    height: 16px;
+    
+    &:hover {
+      background-position: 0 -31px;
+    }
+    
+    &follow {
+      height: 16px; width: 16px; background: url(//badges.strava.com/echelon-sprite-16.png) no-repeat 0 0;
+    }
+    
+    img {
+      visibility: hidden; height: 16px; 
+    }
+  }
 `;
 
 export default function Footer() {
@@ -29,6 +46,7 @@ export default function Footer() {
             date, incomplete, or bizarre.
           </small>
           <p>&copy; Tynan Boyd {new Date().getFullYear()}</p>
+          <a href="https://strava.com/athletes/40828048" className="strava-badge- strava-badge-follow" target="_blank"><img src="//badges.strava.com/echelon-sprite-16.png" alt="Strava" /></a>
         </div>
       </FooterStyles>
     </>
