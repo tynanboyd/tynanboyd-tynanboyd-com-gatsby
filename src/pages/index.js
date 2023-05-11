@@ -38,10 +38,10 @@ export default function HomePage() {
         <p>
           <small>
             <sup>
-              *Last updated: January 19, 2023.
+              *Last updated: May 11, 2023.
               <br />
             </sup>
-            My freelance schedule is booked until May 2023. If we can start your
+            My freelance schedule is booked until July 2023. If we can start your
             project later in the year, let's plant the seed now.
           </small>
         </p>
