@@ -4,6 +4,9 @@
   "description": "Tynan Boyd, Web Developer | Edmonton, AB",
   "version": "0.1.0",
   "license": "MIT",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
