@@ -1,7 +1,7 @@
 {
   "name": "tynan-boyd",
   "private": true,
-  "description": "Tynan Boyd, Web Developer",
+  "description": "Tynan Boyd, Web Developer | Edmonton, AB & Saskatoon, SK",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -25,6 +25,7 @@
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.2.0",
     "gatsby-plugin-manifest": "^5.2.0",
+    "gatsby-plugin-netlify": "^5.1.1",
     "gatsby-plugin-react-svg": "^3.3.0",
     "gatsby-plugin-sharp": "^5.2.0",
     "gatsby-plugin-styled-components": "^6.2.0",
