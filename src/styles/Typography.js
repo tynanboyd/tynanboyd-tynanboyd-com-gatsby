@@ -21,19 +21,19 @@ const Typography = createGlobalStyle`
 	}
 	
 	h1 {
-		font-weight: 900;
-		font-size: 3rem;
-		text-transform: uppercase;
-		letter-spacing: 1px;
+		font-weight: 600;
+		font-size: 2.5rem;
+		letter-spacing: -0.05em;				
 		margin-bottom: 1rem;
 		padding-bottom: 1rem;
 		line-height: 0.8;
 		margin-top: 0;
 		border-bottom: 1px dashed var(--black);
-		
-		@media(min-width: 601px) {
-			font-size: 5rem;
-		}
+		text-transform: uppercase;		
+	}
+	
+	h2 {
+		font-weight: 600;
 	}
 	
 	

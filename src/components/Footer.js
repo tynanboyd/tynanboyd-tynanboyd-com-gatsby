@@ -2,12 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterStyles = styled.footer`
-  display: flex;
-  justify-content: center;
+  display: flex;  
+  font-size: 0.875rem;
 
   div {
-    max-width: 1170px;
-    padding: 0 25px;
+    max-width: 1170px;    
   }
   
   .footer-heading {
@@ -36,15 +35,15 @@ const FooterStyles = styled.footer`
 export default function Footer() {
   return (
     <>
-      <FooterStyles className="text-center">
+      <FooterStyles>
         <div>
           <span className="footer-heading">Disclaimer</span>
-          <small>
+          <p>
             I use this site as a web development playground. It's where I try
             out new ideas, and get to follow through with putting them on the
             World Wide Web. The content here is likely to be grossly out of
             date, incomplete, or bizarre.
-          </small>
+          </p>
           <p>&copy; Tynan Boyd {new Date().getFullYear()}</p>
           <a href="https://strava.com/athletes/40828048" className="strava-badge- strava-badge-follow" target="_blank"><img src="//badges.strava.com/echelon-sprite-16.png" alt="Strava" /></a>
         </div>

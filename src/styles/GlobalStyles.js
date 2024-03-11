@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
 		--yellow: #FFC93F;
 		--black: #191919;
 		--white: #FAF7F7;
+		--grey: #9C9C9C;
 		--orange: #F6511D;
 		--blue: #00A6ED;
 		--highlight-background: linear-gradient(145deg, #72f, #c1b);
@@ -18,7 +19,8 @@ const GlobalStyles = createGlobalStyle`
 	}
 	
 	body {
-		background-color: var(--yellow);
+		background-color: var(--black);
+		color: var(--white);
 		min-height: 100vh;
 		position: relative;
 	}
@@ -48,16 +50,12 @@ const GlobalStyles = createGlobalStyle`
 	}
 	
 	a {
-		color: var(--black);
+		color: var(--yellow);
 	}
 	
 	section {
 		margin-bottom: 1rem;
-	}
-	
-	small {
-		font-size: 16px;
-	}
+	}	
 `;
 
 export default GlobalStyles;

@@ -10,6 +10,11 @@ const LogoStyles = styled.div`
 
   svg {
     overflow: visible;
+    fill: var(--white);
+    
+    path {
+      fill: var(--white);
+    }
   }
 
   #glasses {
@@ -40,7 +45,7 @@ const LogoStyles = styled.div`
 
     #hair,
     #glasses {
-      fill: var(--orange);
+      fill: var(--yellow);
     }
   }
 `;
@@ -63,13 +68,14 @@ const NavStyles = styled.nav`
   }
 
   a {
-    color: var(--black);
+    color: var(--white);
     text-decoration: none;
 
     &[aria-current='page'],
     &:hover {
       text-decoration: underline;
       text-decoration-style: wavy;
+      color: var(--yellow);
     }
   }
 `;
