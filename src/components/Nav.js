@@ -11,7 +11,7 @@ const LogoStyles = styled.div`
   svg {
     overflow: visible;
     fill: var(--white);
-    
+
     path {
       fill: var(--white);
     }
@@ -52,11 +52,20 @@ const LogoStyles = styled.div`
 
 const NavStyles = styled.nav`
   display: flex;
-  justify-content: space-between;
-  max-width: 1170px;
   margin: 1rem auto 2rem;
   padding: 0 25px;
-  overflow: visible;
+  width: 100%;
+  max-width: 1170px;
+  box-sizing: border-box;
+
+  @media (min-width: 600px) {
+    justify-content: space-between;
+    overflow: visible;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0;
+  }
 
   ul {
     list-style: none;
@@ -93,7 +102,7 @@ export default function Nav() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/portfolio">Portfolio</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>

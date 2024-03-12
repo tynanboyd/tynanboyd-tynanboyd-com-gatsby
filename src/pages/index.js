@@ -3,9 +3,22 @@ import { Link } from 'gatsby';
 import SEO from '../components/seo';
 import styled from 'styled-components';
 
-const styledHomePage = styled.section`
-font-size: 3rem;
-line-height: 3.6rem;
+const SiteName = styled.h1`
+  margin-top: 0.5rem;
+`;
+
+const StyledHomePage = styled.section`
+  font-size: 2rem;
+  line-height: 1.5;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+
+  .tooltip {
+    font-size: 2rem;
+    text-decoration: none;
+  }
 `;
 
 export default function HomePage() {
@@ -15,17 +28,24 @@ export default function HomePage() {
       <SEO title="Experienced web designer and developer in Edmonton." />
       <section>
         <span>Hello, this is the website of</span>
-        <h1>Tynan Boyd</h1>
+        <SiteName>Tynan Boyd</SiteName>
       </section>
-      <styledHomePage>
+      <StyledHomePage>
         <p>
           I’m a web designer and developer in Edmonton, Alberta, Canada. I make
-          custom WordPress themes and fast fast <em>fast</em>{' '}
-          <a rel="noopener" href="https://www.gatsbyjs.com/" target="_blank">
+          custom WordPress themes and fast fast <em>fast</em> Gatsby
+          <a
+            className="tooltip"
+            rel="noopener"
+            href="https://www.gatsbyjs.com/"
+            target="_blank"
+          >
             {' '}
-            Gatsby
+            <sup>(?!)</sup>
           </a>{' '}
           sites.
+          <br />
+          <Link to="portfolio">Here are some.</Link>
         </p>
         <p>
           My favourite projects are co-piloted with artists or community-minded
@@ -45,10 +65,10 @@ export default function HomePage() {
             <sup>
               *Last updated: March 2024.
               <br />
-            </sup>          
+            </sup>
           </small>
         </p>
-      </styledHomePage>
+      </StyledHomePage>
     </>
   );
 }

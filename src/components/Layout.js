@@ -7,6 +7,12 @@ import Typography from '../styles/Typography';
 import 'normalize.css';
 import styled from 'styled-components';
 
+const MainContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
+
 const ContentStyles = styled.div`
   max-width: 980px;
   margin: 1rem auto;
@@ -25,11 +31,13 @@ export default function Layout({ children }) {
     <>
       <GlobalStyles />
       <Typography />
-      <Nav />
-      <ContentStyles>
-        {children}
-        <Footer />
-      </ContentStyles>
+      <MainContainer>
+        <Nav />
+        <ContentStyles>
+          {children}
+          <Footer />
+        </ContentStyles>
+      </MainContainer>
     </>
   );
 }
