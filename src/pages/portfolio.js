@@ -8,10 +8,14 @@ const StyledMain = styled.main`
   h2 {
     font-size: 1rem;
     color: var(--grey);
+    margin-bottom: 1rem;
   }
 `;
 
 const ProjectList = styled.ul`
+  margin-top: 0;
+  margin-bottom: 3rem;
+
   li {
     display: flex;
     gap: 0.5rem;
@@ -60,6 +64,14 @@ const Columns = styled.section`
       padding: 0 2rem 0 0;
       justify-content: flex-start;
     }
+
+    &--1 {
+      flex-basis: 66%;
+    }
+
+    &--2 {
+      flex-basis: 30%;
+    }
   }
 
   ul {
@@ -75,7 +87,7 @@ export default function PortfolioPage() {
       <h1>Portfolio</h1>
       <StyledMain>
         <Columns>
-          <div className="column">
+          <div className="column column--1">
             <h2>Projects</h2>
             <ProjectList>
               <li>
@@ -133,8 +145,21 @@ export default function PortfolioPage() {
                 <span>Design, Development</span>
               </li>
             </ProjectList>
+            <h2>An Award I Won Once</h2>
+            <ProjectList>
+              <ul>
+                <li>
+                  <a href="https://awards.adclubedm.com/category/2021/creative-awards/website-under-50/#alberta-innovates-learn-how-website">
+                    Learn How Alberta Innovates
+                  </a>
+                  <span>
+                    Development, Gatsby (subcontracted by RED the Agency)
+                  </span>
+                </li>
+              </ul>
+            </ProjectList>
           </div>
-          <div className="column">
+          <div className="column column--2">
             <h2>What I look like</h2>
             <p>So you can say hello at the grocery store</p>
             <StaticImage

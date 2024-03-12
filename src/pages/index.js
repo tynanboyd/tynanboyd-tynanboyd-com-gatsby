@@ -9,7 +9,7 @@ const SiteName = styled.h1`
 
 const StyledHomePage = styled.section`
   font-size: 2rem;
-  line-height: 1.5;
+  line-height: 1.3;
 
   @media (min-width: 768px) {
     font-size: 3rem;
