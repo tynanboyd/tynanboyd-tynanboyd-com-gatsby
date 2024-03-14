@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
+import ProjectList from '../components/ProjectList';
 import SEO from '../components/seo';
 
 const StyledMain = styled.main`
@@ -9,30 +10,6 @@ const StyledMain = styled.main`
     font-size: 1rem;
     color: var(--grey);
     margin-bottom: 1rem;
-  }
-`;
-
-const ProjectList = styled.ul`
-  margin-top: 0;
-  margin-bottom: 3rem;
-
-  li {
-    display: flex;
-    gap: 0.5rem;
-    margin-bottom: 0.25rem;
-  }
-
-  span {
-    color: var(--grey);
-  }
-
-  a {
-    color: var(--white);
-    text-decoration: none;
-
-    &:hover {
-      color: var(--yellow);
-    }
   }
 `;
 
@@ -49,7 +26,7 @@ const Columns = styled.section`
     }
   }
 
-  @media (min-width: 601px) {
+  @media (min-width: 768px) {
     flex-direction: row;
   }
 
@@ -80,6 +57,75 @@ const Columns = styled.section`
   }
 `;
 
+const projects = [
+  {
+    url: 'https://wearepixel.ca',
+    name: 'Pixel',
+    description: 'Design, Development',
+  },
+  {
+    url: 'https://albertacarpetcleaning.ca',
+    name: 'Alberta Carpet Cleaning',
+    description: 'Design',
+  },
+  {
+    url: 'https://breakawayaccounting.ca',
+    name: 'Breakaway Accounting',
+    description: 'Design, Development, Branding',
+  },
+  {
+    url: 'https://commongroundarts.ca',
+    name: 'Common Ground Arts Society',
+    description: 'Design, Development, Branding',
+  },
+  {
+    url: 'https://itecanada.org',
+    name: 'ITE Canada',
+    description: 'Design',
+  },
+  {
+    url: 'https://muttart.org',
+    name: 'The Muttart Foundation',
+    description: 'Design',
+  },
+  {
+    url: 'https://nireit.com',
+    name: 'Nearctic',
+    description: 'Design, Webflow Development',
+  },
+  {
+    url: 'https://quigg.com/',
+    name: 'Quigg',
+    description: 'Gatsby Development',
+  },
+  {
+    url: 'https://techeasy.ca/',
+    name: 'TechEasy',
+    description: 'Design, Development',
+  },
+];
+
+const awards = [
+  {
+    url: 'https://awards.adclubedm.com/category/2021/creative-awards/website-under-50/#alberta-innovates-learn-how-website',
+    name: 'Learn How Alberta Innovates',
+    description: 'Development, Gatsby (subcontracted by RED the Agency, 2021)',
+  },
+  {
+    url: '',
+    name: 'Perfect Spelling for the Entire Year',
+    description: 'Grade 6 Spelling Tests (Westglen Elementary, 2000)',
+  },
+];
+
+const otherLinks = [
+  {
+    url: 'https://www.chess.ca/en/ratings/p/?id=184846',
+    name: 'Chess Federation of Canada Profile',
+    description: `The World's Best Sport`,
+  },
+];
+
 export default function PortfolioPage() {
   return (
     <>
@@ -89,83 +135,20 @@ export default function PortfolioPage() {
         <Columns>
           <div className="column column--1">
             <h2>Projects</h2>
-            <ProjectList>
-              <li>
-                <a target="_blank" href="https://wearepixel.ca">
-                  Pixel
-                </a>
-                <span>Design, Development</span>
-              </li>
-              <li>
-                <a target="_blank" href="https://albertacarpetcleaning.ca">
-                  Alberta Carpet Cleaning
-                </a>
-                <span>Design</span>
-              </li>
-              <li>
-                <a target="_blank" href="https://breakawayaccounting.ca">
-                  Breakaway Accounting
-                </a>
-                <span>Design, Development, Branding</span>
-              </li>
-              <li>
-                <a target="_blank" href="https://commongroundarts.ca">
-                  Common Ground Arts Society
-                </a>
-                <span>Design, Development, Branding</span>
-              </li>
-              <li>
-                <a target="_blank" href="https://itecanada.org">
-                  ITE Canada
-                </a>
-                <span>Design</span>
-              </li>
-              <li>
-                <a target="_blank" href="https://muttart.org">
-                  The Muttart Foundation
-                </a>
-                <span>Design</span>
-              </li>
-              <li>
-                <a target="_blank" href="https://nireit.com">
-                  Nearctic
-                </a>
-                <span>Design, Webflow Development</span>
-              </li>
-              <li>
-                <a target="_blank" href="https://quigg.com/">
-                  Quigg
-                </a>
-                <span>Gatsby Development</span>
-              </li>
-              <li>
-                <a target="_blank" href="https://techeasy.ca/">
-                  TechEasy
-                </a>
-                <span>Design, Development</span>
-              </li>
-            </ProjectList>
-            <h2>An Award I Won Once</h2>
-            <ProjectList>
-              <ul>
-                <li>
-                  <a href="https://awards.adclubedm.com/category/2021/creative-awards/website-under-50/#alberta-innovates-learn-how-website">
-                    Learn How Alberta Innovates
-                  </a>
-                  <span>
-                    Development, Gatsby (subcontracted by RED the Agency)
-                  </span>
-                </li>
-              </ul>
-            </ProjectList>
+            <ProjectList items={projects} />
+            <h2>Important Awards I Have Won Throughout Time</h2>
+            <ProjectList items={awards}></ProjectList>
+            <h2>Vital Links</h2>
+            <ProjectList items={otherLinks}></ProjectList>
           </div>
           <div className="column column--2">
-            <h2>What I look like</h2>
-            <p>So you can say hello at the grocery store</p>
+            <h2>Roughly What I Look Like</h2>
+            <p>So we can say hello at the grocery store</p>
             <StaticImage
               className="headshot"
-              src="../assets/images/tynan-boyd.jpg"
-              alt="Tynan Boyd, wearing glasses and an orange cardigan with a collared shirt"
+              src="../assets/images/tynan-boyd-yellow.jpg"
+              title="Nice to meet you."
+              alt="Tynan Boyd, wearing glasses and an brown collared button-up sweater jacket, AKA a 'shacket'"
               placeholder="blurred"
               width={600}
             />
