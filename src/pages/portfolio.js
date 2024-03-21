@@ -94,11 +94,6 @@ const projects = [
     description: 'Design, Webflow Development',
   },
   {
-    url: 'https://quigg.com/',
-    name: 'Quigg',
-    description: 'Gatsby Development',
-  },
-  {
     url: 'https://techeasy.ca/',
     name: 'TechEasy',
     description: 'Design, Development',
